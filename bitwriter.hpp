@@ -14,6 +14,10 @@ private:
 	
 	
 public:
+	
+	enum {isWriting = 1};
+	enum {isReading = 0};
+	
 	bitwriter(int buffsize);
 	~bitwriter();
 	

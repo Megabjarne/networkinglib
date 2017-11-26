@@ -11,6 +11,9 @@ private:
 	int bufferpos;
 	
 public:
+	enum {isWriting = 0};
+	enum {isReading = 1};
+	
 	bitreader(uint8_t *buff, int buffsize);
 	
 	bool readbits(void* v, unsigned int bits);

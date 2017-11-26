@@ -1,5 +1,5 @@
 
-CFLAGS = -g -O0
+CFLAGS = -g -std=c++11
 
 build: bitwriter.o bitreader.o
 	g++ bitwriter.o bitreader.o main.cpp $(CFLAGS)
